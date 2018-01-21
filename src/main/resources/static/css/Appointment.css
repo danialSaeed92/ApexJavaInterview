@@ -1,0 +1,92 @@
+input {
+    cursor: inherit;
+}
+#new {
+    position: relative;
+    background-color: #ff8300;
+    clear: right;
+    margin-top: 35px;
+    margin-left: 35px;
+    border-radius: 8px;
+    width: 49px;
+    margin-bottom: 10px;
+}
+#time {
+    width: 100px;
+    margin-left: 10px;
+	border-radius: 8px;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 100%;
+}
+#desc {
+    width: 100px;
+    margin-left: 11px;
+    margin-bottom: 10px;
+	border-radius: 8px;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 100%;
+}
+#date {
+    width: 100px;
+    margin-left: 13px;
+	border-radius: 8px;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 100%;
+}
+#error p {
+    margin-left: 35px;
+    color: #e60808;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 200%;
+}
+#search {
+    background-color: #ff8300;
+    border-radius: 8px;
+    width: 60px;
+}
+#cancel {
+    background-color: #ff0051;
+    border-radius: 8px;
+    width: 80px;
+    position: relative;
+    top: -81px;
+    left: -100px;
+}
+ #main {
+    margin-top: 50px;
+    margin-left: 35px;
+}
+#toSelect {
+    margin-left: 35px;
+    width: 100px;
+	border-radius: 8px;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 100%;
+}
+#mytbl table,th,td {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f200;}
+#mytbl {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+BODY {
+    background-color: #e6c8ad57;
+    color: #003eff;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+#frm {
+    margin-left: 35px;
+}
+#content {
+    margin-left: 450px;
+}
