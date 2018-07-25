@@ -1,6 +1,6 @@
 package com.apex.serviceimpl;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 import com.apex.pojo.Appointment;
 import com.apex.repository.AppointmentRepository;
 import com.apex.service.AppointmentService;
-
+/**
+ * 
+ * @author ds035n
+ *
+ */
 @Service
 @Transactional
 public class AppointmentServiceImpl implements AppointmentService {
@@ -21,9 +25,8 @@ public class AppointmentServiceImpl implements AppointmentService {
 	@Override
 	public List<Appointment> findAll() {
 		
-		List<Appointment> appointments = new ArrayList<>();
-		appointments = appointmentRepository.findAll();
-		return appointments;
+		return appointmentRepository.findAll();
+		 
 	}
 
 	@Override
@@ -35,9 +38,8 @@ public class AppointmentServiceImpl implements AppointmentService {
 
 	@Override
 	public List<Appointment> findByDesc(String desc) {
-		List<Appointment> appointments = new ArrayList<>();
-		appointments = appointmentRepository.findByDescContaining(desc);
-		return appointments;
+	
+		return appointmentRepository.findByDescContaining(desc);
 	}
 
 }
