@@ -6,7 +6,11 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.stereotype.Component;
-
+/**
+ * 
+ * @author ds035n
+ *
+ */
 @SpringBootApplication
 
 @Component("com.*")

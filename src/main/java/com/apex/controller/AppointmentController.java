@@ -16,7 +16,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.apex.pojo.Appointment;
 import com.apex.service.AppointmentService;
 import com.google.gson.Gson;
-
+/**
+ * 
+ * @author ds035n
+ *
+ */
 @Controller
 public class AppointmentController {
 
@@ -51,7 +55,7 @@ public class AppointmentController {
 		
 		List<Appointment> appointments = new ArrayList<>();
 		try{ 
-			if(desc.equals("")|| desc==null)
+			if(null==desc||("").equals(desc) )
 			appointments =appointmentService.findAll();	
 			else
 				appointments = appointmentService.findByDesc(desc);
@@ -60,7 +64,7 @@ public class AppointmentController {
 		}
 		
 		try {
-			String json =  "" ; 
+			String json ; 
 			json =new Gson().toJson(appointments);
 			response.getWriter().write("{ \"data\":"   + json + " }");
 		} catch (IOException e) {
